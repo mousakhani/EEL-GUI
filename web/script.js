@@ -16,6 +16,8 @@ window.onload = function () {
   async function update_table(items = null) {
     total_number.value = await eel.get_counter()();
     table.innerHTML = `<div class="row head">
+            <span class="cell">col 1</span>
+            <span class="cell">col 2</span>
             <span class="cell">col 3</span>
             <span class="cell">col 4</span>
             <span class="cell">col 5</span>
@@ -67,7 +69,7 @@ window.onload = function () {
           input_factor.className += " " + "error";
           setTimeout(function () {
             input_factor.classList.remove("error");
-          }, 2000);
+          }, 500);
         }
       }
     }
