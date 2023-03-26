@@ -1,0 +1,7 @@
+*.xlsx
+dist/
+build/
+/__pycache__/
+scripts.ini
+*.spec
+/exe

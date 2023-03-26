@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: content-box;
+}
+.container{
+    padding: 5px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.left-side{
+display: flex;
+flex-direction: column;
+justify-content: start;
+align-items: center;
+padding-left: 5px;
+margin-top: 5px;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin:0 5px;
+    overflow-y: auto;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+.row{
+    display: flex;
+    border:1px solid green;
+    justify-content: center;
+    margin:5px auto;
+    align-items: center;
+    height: 1.5rem;
+}
+.head{
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+}
+.cell{
+    padding:auto 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.factor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: green; */
+    margin: 5px;
+}
+
+input[type='text']{
+    width:auto;
+}
+label{
+    width:5rem;
+    padding: 3px;
+    text-align: center;
+}
+
+
+.listbox{
+
+}
+
+h1{
+    color: green;
+    text-align: center;
+}
+.random_number{
+    margin: 50px;
+    font-size: 150px;
+    text-align: center;
+}
+button{
+    display: block;
+    margin: 0 auto;
+}
+
+.error{
+    background-color: red;
+}
+
+.success{
+    background-color: green;
+}
