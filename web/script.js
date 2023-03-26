@@ -67,7 +67,7 @@ window.onload = function () {
           input_factor.className += " " + "error";
           setTimeout(function () {
             input_factor.classList.remove("error");
-          }, 2000);
+          }, 500);
         }
       }
     }

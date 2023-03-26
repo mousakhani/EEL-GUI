@@ -22,6 +22,7 @@ class Controller:
             wb=load_workbook(self._filename, read_only=False)
         except FileNotFoundError:
             wb=Workbook()
+            wb.active['A1'].value=''
             wb.save(filename = self._filename)
         self.wb=wb
         self.sheet= self.wb.active
@@ -46,9 +47,9 @@ class Controller:
         return excel_data
     
     def get_total_count(self):
-        d= self.sheet.max_row
+        max_row = self.sheet.max_row - 1
         self.new_wb()
-        return d
+        return max_row
 
     def check_contents(self, content):
         if re.match("^[0-9]+$",content):
