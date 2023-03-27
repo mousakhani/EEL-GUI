@@ -48,7 +48,7 @@ window.onload = function () {
         var dd = await get_data();
         var found_items = [];
         dd.forEach((element) => {
-          if (element[0] == input_data.substr(1)) {
+          if (element[3] == input_data.substr(1)) {
             found_items.push(element);
           }
         });
